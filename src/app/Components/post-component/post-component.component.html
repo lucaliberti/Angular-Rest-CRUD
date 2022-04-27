@@ -1,0 +1,16 @@
+<div>
+
+<h2>{{ componentName}}</h2>
+<p>Inserimento di un dato</p>
+
+<div   *ngIf="isFething===true">Loading ...</div>
+
+<div   *ngIf="isFething===false">
+  <p>Request: POST {{ httpRequestString}} 
+     <button   (click)="makeHttpRequest()">Post</button>  
+  </p>
+ 
+  <p>Response: "{{httpResponse | json }}"  </p>
+</div>
+
+</div>

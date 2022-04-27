@@ -1,0 +1,24 @@
+
+<div>
+
+
+<h2>{{ componentName}}</h2>
+<p>Richiesta di tutti i dati, migliorato, prendo solo i primi 10</p>
+
+<div *ngIf="isFething===true">Loading ...</div>
+
+<div   *ngIf="isFething===false">
+  <p>Request: GET {{ httpRequestString}} 
+     <button   (click)="makeHttpRequest2()">Get</button>  
+  </p>
+ 
+  <!--
+  <p>Response: </p>
+  <p *ngFor="let e of httpResponse; let i=index"> {{i}}: {{e | json }}</p>
+  -->
+
+  <p>Response: </p>
+  <p *ngFor="let e of  typedResponse; let i=index"> {{i}}: {{e | json }}</p>
+ 
+</div>
+</div>

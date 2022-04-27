@@ -1,0 +1,17 @@
+<div>
+
+<h2>{{ componentName}}</h2>
+<p>Richiesta di tutti i dati</p>
+
+<div *ngIf="isFething===true">Loading ...</div>
+
+<div   *ngIf="isFething===false">
+  <p>Request: GET {{ httpRequestString}} 
+     <button   (click)="makeHttpRequest()">Get</button>  
+  </p>
+ 
+  <p>Response: "{{httpResponse | json }}""  </p>
+</div>
+
+
+</div>

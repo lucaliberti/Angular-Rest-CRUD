@@ -1,0 +1,45 @@
+### -----------------------------------------------
+### Getting a resource
+
+GET https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+
+
+### -----------------------------------------------
+### Listing all resources
+GET https://jsonplaceholder.typicode.com/posts
+
+
+
+
+### -----------------------------------------------
+### Creating a resource
+POST https://jsonplaceholder.typicode.com/posts
+'Content-type': 'application/json; charset=UTF-8'
+
+{
+  "title": 'ciccio',
+    "body": 'pasticcio',
+    "userId": 99,
+}
+
+
+
+### -----------------------------------------------
+### Updating a resource
+PUT https://jsonplaceholder.typicode.com/posts/11
+'Content-type': 'application/json; charset=UTF-8'
+
+{
+    "id": 2,
+    "title": 'foo',
+    "body": 'bar',
+    "userId": 1,
+}
+
+
+
+### -----------------------------------------------
+### Deleting a resource
+DELETE https://jsonplaceholder.typicode.com/posts/11
